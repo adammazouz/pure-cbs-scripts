@@ -98,5 +98,5 @@ sudo iscsiadm -m node -L automatic
 
 # mount volume
 sudo mkdir $3
-DISK=$(sudo multipath -ll|awk '{print $1;exit}')
+DISK=$(sudo multipath -ll | awk '{print $1;exit}')
 sudo mount /dev/mapper/$DISK $3
